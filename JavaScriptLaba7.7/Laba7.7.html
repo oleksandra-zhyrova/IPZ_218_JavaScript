@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content = "text/html;charset = utf-8" />
+</head>
+<body lang = "RU">
+
+  <script>
+    var OK = "Тетя Эльза чувствует себя в порядке. \n Юстас.";
+    var Problem = "Тетя Эльза заболела. \n Юстас.";
+    function getDate()
+    {
+      var today = new Date();
+      return today.toLocaleString() + "\n";
+    }
+    function CheckRadio(form, value)
+    {
+      if (value == "Good") form.Letter.value = getDate() + OK;
+      else
+      form.Letter.value = getDate() + Problem;
+    }
+  </script>
+   
+  <H1>Отправьте телеграмму</H1>
+  <FORM NAME = "Sel2">
+    <label>
+      <input TYPE = "radio" NAME = "Code" VALUE = "Good" onClick = "if(this.checked) CheckRadio(this.from, this.value);"/>
+      Явка в норме
+    </label>
+    <BR/>
+    <label>
+      <INPUT TYPE = "radio" NAME = "Code" VALUE = "Bad" onClick = "if(this.checked) CheckRadio(this.form, this.value);" />
+      Явка провалена
+    </label>
+    <TEXTAREA NAME = "Letter" ROWS = "3" COLS = "35"></TEXTAREA>
+    <INPUT TYPE = "button" VALUE = "Готово" onClick = "alert(document.Sel2.Letter.value);" />
+    <INPUT TYPE = "reset" VALUE = "Сброс" />
+  </FORM>
+</body>
+</html>

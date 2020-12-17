@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка существования свойства</title>
+  <script type = "text/javascript">
+    var gif =
+    {
+      roof:        "<img src = '1I3.gif'/><br/>",
+      secondFloor: "<img src = '1uwu.gif'/><br/>",
+      firstFloor:  "<img src = '5AVm.gif'/><br/>",
+      basement:    "<img src = 'Pcx.gif'/><br/>",
+      adress:      "<img src =  style ='color:red'> funny GIFs. N10<hr/>"
+    }
+    document.write(gif.roof);
+
+    if ("thirdFloor" in gif)
+    {
+      document.write(gif["thirdFloor"]);
+    }
+    else
+    {
+      document.write(gif["secondFloor"]);
+    }
+
+    document.write(gif.secondFloor);
+    document.write(gif.firstFloor);
+    document.write(gif.basement);
+    document.write(gif.address);
+  </script>
+</head>
+
+<body>
+</body>
+</html>

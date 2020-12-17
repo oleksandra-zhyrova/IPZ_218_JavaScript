@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Массив Аргументов arguments</title>
+  <script type = "text/javascript">
+  function f()
+  {
+    var count = arguments.length;
+    if(count != 3)
+    {
+      // document.write("<p><b style = 'color: red;'> ERROR:</b>");
+      document.write("<p><b style = 'color: red;'> ERROR:</b> <em>Требуется три аргумента при вызове. Функция вызвана с " + count + " параметрами!</em>");
+    }
+    else
+    {
+      document.write("<p><b style = 'color: green;'> Правильный вызов функции.</b> Аргументы: ");
+
+      for (var i = 0; i < count; i++)
+      document.write(arguments[i] + ", ");
+    }
+  }
+
+  f(1, 2, 3, 4);   // ERROR
+  f(1, 2, 3);
+  f(1, 2);         // ERROR
+
+  </script>
+  </head>
+  <body>
+  </body>
+  </html>

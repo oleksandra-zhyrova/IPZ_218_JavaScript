@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title> оператор return</title>
+  <script type = "text/javascript">
+  function add(a, b)
+  {
+    return a + b;
+  }
+
+  function sub(a, b)
+  {
+    return a - b;
+  }
+
+  function mul(a, b)
+  {
+    return a * b;
+  }
+
+  function div( a, b)
+  {
+    return a / b;
+  }
+
+   function pow(a, b)
+  {
+    return a ^ b;
+  }
+
+  function root(a, b)
+  {
+    return Math.pow(a, 1/b);
+  }
+
+
+  var operand1  = prompt("Введите первое число:");
+  var operation = prompt("Введите знак фрифметической операции: + , - ,  / , * , root , pow ");
+  var operand2  = prompt("Введите второе число:");
+  operand1 = parseInt(operand1);
+  operand2 = parseInt(operand2);
+
+  switch (operation)
+  {
+    case "+":
+    result = add(operand1, operand2);
+    break;
+
+    case "-":
+    result = sub(operand1, operand2);
+    break;
+
+    case "*":
+    result = mul(operand1, operand2);
+    break;
+
+    case "/":
+    result = div(operand1, operand2);
+    break;
+
+    case "root":
+    result = root(operand1, operand2);
+    break;
+
+    case "pow":
+    result = pow(operand1, operand2);
+    break;
+
+    default:
+    document.write("<p><b style = 'color: red'>" + operation + "</b> - Не является знаком арифметической операцией.");
+  }
+
+  if (result != undefined)
+  {
+    document.write("<p>" + operand1 + " " + operation + " " + operand2 + " = " + result);
+  }
+  </script>
+</head>
+<body>
+</body>
+</html>

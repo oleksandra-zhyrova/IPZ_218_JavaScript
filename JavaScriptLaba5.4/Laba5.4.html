@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title> Вложенные обьекты</title>
+  <script type = "text/javascript">
+  var human =
+  {
+    firstNAme: "Alex",
+    secondNAme: "Jazun",
+    age: 27,
+
+    occupation:
+    {
+      company: "ZIEIT",
+      position: "Teacher"
+    },
+
+    occupation1:
+    {
+      company: "Microsoft",
+      position: "Web Developer"
+    }
+  };
+
+  document.write("<p>First Name:    " + human.firstNAme);
+  document.write("<p>Second Name: " + human.secondNAme);
+  document.write("<p>Age:       " + human.age + "years old");
+
+  document.write("<p>Company:    "  + human.occupation.company);
+  document.write("<p>Position: " + human.occupation.position);
+
+  document.write("<p>Company:    "  + human.occupation1.company);
+  document.write("<p>Position: " + human.occupation1.position);
+
+  </script>
+</head>
+<body>
+</body>
+</html>

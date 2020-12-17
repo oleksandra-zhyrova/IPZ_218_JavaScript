@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <h1>Hello, world!</h1>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script type = "text/javascript">
+
+  var vacations = []
+
+  var info1 = {
+    name: "Venezia",
+    price: 3000,
+    img: "img1.jpeg",
+    description:
+    `"Венеция - город и коммуна в Италии, в регионе Венето.
+    Административный центр региона.
+    Расположен на северо-востоке страны, на 117 небольших островах в Венецианской лагуне Адриатического моря.
+    Библиотека Марчиана - крупнейшая библиотека города, расположенная на площади Святого Марка (основана 1468).
+    В Государственном архиве Венеции хранятся исторические документы с момента образования Венецианской республики.
+    Публичная библиотека фонда Кверини Стампалия.
+    Действует Венецианская консерватория (основана в 1876 году, расположена во дворце Пизани).
+    И Военно-морское училище Франческо Морозини (учебное заведение ВМС Италии, основанное в 1937 году)."`
+  }
+  vacations.push(info1)
+
+  var info2 = {
+    name: "USA",
+    price: 2500,
+    img: "img2.jpg",
+    description:
+    `"Соединённые Штаты — высокоразвитая страна,
+    обладающая первой экономикой мира по номинальному ВВП и второй по ВВП (ППС).
+    Основная территория США (называемая континентальные штаты)
+    расположена на Североамериканском континенте
+    и простирается от Атлантического океана на востоке до Тихого океана на западе.
+    Ни одна из стран умеренного пояса, кроме стран Восточной Азии,
+    не имеет такого богатства и разнообразия флоры, как США."`
+  }
+  vacations.push(info2)
+
+  var info3 = {
+    name: "China",
+    price: 4100,
+    img: "image3.jpg",
+    description:
+    `"Одна из ведущих космических держав мира,
+    обладает ядерным оружием и крупнейшей в мире армией по численности военнослужащих.
+    Культура Китая — одна из самых древних и самобытных в мире.
+    Культура Китая оказала большое влияние на развитие культуры многочисленных соседних народов,
+    населявших обширные территории позднейших Монголии, Тибета, Индокитая, Кореи и Японии.
+    Китай обладает одной из старейших спортивных культур в мире. Существуют свидетельства о том,
+    что в Китае ещё в древние времена играли в некую игру с кожаным мячом, наподобие современного футбола."`
+  }
+  vacations.push(info3)
+
+    var info4 =
+  {
+    name: "Norway",
+    price: 5200,
+    img: "image4.jpg",
+    description:
+    `"Норвегия – это прежде всего зелёные леса и горы, первозданные ледники,
+    шумные и прохладные водопады, множество рек и озёр, красивейшие фьорды,
+    белые ночи и северное сияние. А ещё поражающие глаз пейзажи, охота, рыбалка, интересная и занимательная история, культура.
+    Всё это привлекает любителей путешествий, которые приезжают сюда летом и зимой со всего мира.
+    В Норвежском музее истории и культуры в столице и других подобных музеях
+    по стране можно ознакомиться с ремёслами, архитектурой и искусством разных регионов.`
+  }
+  vacations.push(info4)
+
+  var info5 =
+  {
+    name: "Nederland",
+    price: 4990,
+    img: "image5.jpg",
+    description:
+    `"Нидерланды — одна из самых густонаселенных стран в мире.
+    Куда бы вы ни пошли, почти никогда не сможете уйти от цивилизации.
+    Северная Голландия — самая привлекательная для туристов провинция, здесь расположены главные достопримечательности Голландии.
+    Северный регион можно порекомендовать и тем туристам, которые интересуются историей Нидерландов.
+    В Волендаме вы можете полюбоваться старинными костюмами, ветряными мельницами, попробовать традиционные рыбные блюда.
+    Не менее интересны старые города Энкхюйзен, Хорн и Алкмаар. На западном побережье, особенно в Зандворте и на островах, расположены прекрасные пляжи.
+    А в Текселе вы можете заказать поездку на острова."`
+  }
+  vacations.push(info5)
+
+  vacations.forEach((item, i) =>
+  {
+    var cardCodeString =
+    `<div class="card" style="width: 28rem; margin: 20px">
+    <img src="${item.img}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">${item.name}</h5>
+    <p class="card-text"> ${item.description} </p>
+    <a href="#" class="btn btn-primary"> Price $${item.price} </a>
+    </div>
+    </div>`
+    document.write(cardCodeString);
+
+    document.write("</br></br>");
+  });
+
+
+  let selectedCountryName = prompt("Куда летите? Можем предложить следующие варианты: Venezia, USA, China, Norway, Nederland");
+  let peopleCount = prompt("Сколько человек летит?");
+  let daysCount = prompt("На сколько дней хотите полететь?");
+
+  vacations.calc = function(inPeopleCount, inDaysCount, inCountryName)
+  {
+    var price = 0;
+    this.forEach((item, i) =>
+    {
+      if (item.name == selectedCountryName)
+      {
+        price = item.price;
+      }
+    });
+
+    // alert("inPeopleCount = " + inPeopleCount);
+    // alert("inDaysCount = " + inDaysCount);
+    // alert("inCountryName = " + inCountryName);
+    // alert("price = " + price);
+    var result = inPeopleCount * inDaysCount * price;
+    // alert(result);
+    return result;
+  };
+
+  document.write("selectedCountryName: " + selectedCountryName + "</br>")
+  document.write("peopleCount: " + peopleCount + "</br>")
+  document.write("daysCount: " + daysCount + "</br>")
+  document.write("total Price:  " + vacations.calc(peopleCount, daysCount, selectedCountryName) + "</br>")
+  </script>
+</body>
+</html>

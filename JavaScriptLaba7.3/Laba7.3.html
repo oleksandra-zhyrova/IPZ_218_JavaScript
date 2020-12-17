@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta http-http-equiv="Content-Type" content="text/html;charset = utf-8">
+  <script>
+    function btnClick()
+    {
+      if (document.Test1.Sex[0].checked)
+      {
+        document.Test1.Sex[1].click();
+      }
+      else
+      {
+        document.Test1.Sex[0].click();
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <H1> Метод SEXclick группы переключателей</H1>
+  <FORM NAME = "Test1">
+    <INPUT TYPE = "RADIO" NAME = "Sex" VALUE = "Man" CHECKED>Мужской
+      <INPUT TYPE = "RADIO" NAME = "Sex" VALUE = "Women">Женский
+        <BR> Состояние одежды можно изменить, нажав на эту кнопку
+          <INPUT TYPE = "button" VALUE =  "Смена одежды"
+          onClick = "btnClick();">
+
+          </FORM>
+        </body>
+        </html>

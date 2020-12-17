@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script>
+    function btnClick2()
+    {
+      var sI = document.Test2.Item.selectedIndex;
+      var txt = "Предложено "
+      + document.Test2.Item.length
+      + " напитков "
+      + "\nВыбран "
+      + document.Test2.Item.options[sI].text
+      + " (value = "
+      + document.Test2.Item.options[sI].value
+      + ", index = "
+      + document.Test2.Item.options[sI].index + ")";
+
+      if (document.Test2.Item.options[sI].defaultSelected)
+      {
+        txt = txt + "\nЭтот напиток выбирается по умолчанию";
+      }
+
+      alert(txt);
+    }
+  </script>
+</head>
+<body>
+
+  <H1> Работа с готовым списком </H1>
+  <FORM NAME = "Test2">
+    <SELECT NAME = "Item" SIZE = 5>
+      <OPTION VALUE = "tea" SELECTED> Чай </option>
+      <OPTION VALUE = "coffee"> Кофе </option>
+      <OPTION VALUE = "cocoa"> Какао </option>
+      <OPTION VALUE = "juice"> Сок </option>
+    </SELECT>
+
+    <INPUT TYPE = "button" VALUE = "Пусть кофе" onClick = "Test2.Item.selectedIndex = 1;">
+    <INPUT TYPE = "button" VALUE = "Поссмотрим" onClick = "btnClick2();">
+  </FORM>
+</body>
+</html>
